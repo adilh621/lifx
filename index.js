@@ -4,7 +4,7 @@
 
 
 
-function turnOn(){
+ turnOn = () => {
 
 var axios = require('axios');
 
