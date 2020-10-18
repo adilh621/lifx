@@ -15,63 +15,16 @@
 <body>
 
   <p>Hello, world!</p>
-<button type="button" id="toggle"class="btn btn-primary">On and Off</button>
+<button type="button" onclick="turnOn()"id="toggle"class="btn btn-primary">On and Off</button>
 <button type="button" class="btn btn-secondary">Breathe effect</button>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
 
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <!-- // <script src="index.js"></script> -->
-
-  <script>
-
-
-var btn = $("#toggle");
-
-console.log(btn);
-
-
-$(btn).click(function(){
+  <script src="index.js"></script>
 
 
 
-var axios = require('axios');
-
-
-const options = {
-  headers: {
-      'Authorization': 'Bearer c55a9ea89c4659c51b25c4ee279f898eb47a6779f2835611ff7d5ac894906b9f'
-  }
-};
-
-const data = {
-	period: 10,
-	cycles: 1,
-	color: "white"
-}
-
-var breathe = "https://api.lifx.com/v1/lights/all/effects/breathe"
-var power = "https://api.lifx.com/v1/lights/all/toggle"
-
-axios.post(power, data, options)
- .then((res) => {
-   console.log("RESPONSE ==== : ", JSON.stringify(res.status));
- })
- .catch((err) => {
-   console.log("ERROR: ====", err);
- })
-
-
-  
-});
-
-
-
-
-
-
-
-  </script>
 </body>
 
 </html>

@@ -2,14 +2,9 @@
 
 // const appToken = 'c50c02e356e09edd966fca91e9e4cafbc6392a08d9ce89f6f9aed2337f6b259e' ;
 
-var btn = $("#toggle");
-
-console.log(btn);
 
 
-$(btn).click(function(){
-
-
+function turnOn(){
 
 var axios = require('axios');
 
@@ -37,9 +32,10 @@ axios.post(power, data, options)
    console.log("ERROR: ====", err);
  })
 
+};
 
-  
-});
+turnOn();
+ 
 
 // var axios = require('axios');
 
