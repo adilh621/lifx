@@ -14,14 +14,60 @@
 
 <body>
 
-  <p>Hello, world!</p>
-<button type="button" onclick="turnOn()"id="toggle"class="btn btn-primary">On and Off</button>
-<button type="button" class="btn btn-secondary">Breathe effect</button>
+  <div class="card text-center">
+
+    <div class="card-body">
+      <h5 class="card-title">You are controlling:</h5>
+      <p class="card-text" id="lightLabel"></p>
+      <a onclick="getLightInfo()" class="btn btn-primary">Get Info</a>
+    </div>
+    <div class="card-footer text-muted" id="powerToggle">
+      
+    </div>
+  </div>
+<!-- Toggle Power  -->
+  <div class="card text-center">
+    <div class="card-header">
+      
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Toggle On/Off</h5>
+      <p class="card-text">Press this button to turn on and off lights</p>
+      <a onclick="turnOn()"id="toggle" class="btn btn-primary">Toggle</a>
+    </div>
+    <div class="card-footer text-muted" id="update">
+      
+    </div>
+  </div>
+
+
+  <div class="card text-center">
+
+    <div class="card-body">
+      <h5 class="card-title">Breathe Effect</h5>
+      <p class="card-text">Press this button to toggle a breathe effect cycle</p>
+      <a onclick="breatheEffect()" class="btn btn-primary">Breathe Effect</a>
+    </div>
+    <div class="card-footer text-muted">
+      
+    </div>
+  </div>
+
+  <div class="card text-center">
+
+    <div class="card-body">
+      <h5 class="card-title">Pulse Effect</h5>
+      <p class="card-text">Press this button to toggle a pulse effect cycle</p>
+      <a onclick="pulseEffect()" class="btn btn-primary">Pulse Effect</a>
+    </div>
+    <div class="card-footer text-muted">
+      
+    </div>
+  </div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
-
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script src="main.js"></script>
+<script src="main.js"></script>
 
 
 
