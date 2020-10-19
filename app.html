@@ -14,6 +14,7 @@
 
 <body>
 
+  <!-- light info  -->
   <div class="card text-center">
 
     <div class="card-body">
@@ -25,7 +26,17 @@
       
     </div>
   </div>
+
+  <form>
+    <div class="form-group">
+      <input type="text" class="form-control" id="colorOpt" placeholder="ex:red">
+    </div>
+  <button type="submit" onclick="powerStat()" class="btn btn-primary">Submit</button>
+</form>
+
 <!-- Toggle Power  -->
+
+<div class = "container" id="hide">
   <div class="card text-center">
     <div class="card-header">
       
@@ -40,7 +51,7 @@
     </div>
   </div>
 
-
+<!-- breath effect  -->
   <div class="card text-center">
 
     <div class="card-body">
@@ -53,6 +64,7 @@
     </div>
   </div>
 
+  <!-- pulse effect  -->
   <div class="card text-center">
 
     <div class="card-body">
@@ -64,6 +76,8 @@
       
     </div>
   </div>
+
+</div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
